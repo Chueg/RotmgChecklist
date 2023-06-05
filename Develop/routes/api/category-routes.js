@@ -9,8 +9,6 @@ router.get('/', async (req, res) => {
 
   try {
     const schmoke = await Category.findAll({
-      include: [{ model: Product }],
-
     });
     res.status(200).json(schmoke);
   } catch (err) {
