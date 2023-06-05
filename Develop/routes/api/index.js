@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const categoryRoutes = require('./category-routes');
+const WeaponRoutes = require('./Weapon-routes');
 
 
-router.use('/categories', categoryRoutes);
+router.use('/categories', WeaponRoutes);
 
 
 module.exports = router;

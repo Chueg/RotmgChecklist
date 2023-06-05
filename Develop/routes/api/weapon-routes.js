@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Product } = require('../../models');
+const { Weapon } = require('../../models');
 
 // The `/api/categories` endpoint
 
@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
 
   try {
-    const schmoke = await Category.findAll({
+    const schmoke = await Weapon.findAll({
     });
     res.status(200).json(schmoke);
   } catch (err) {
@@ -17,12 +17,11 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-  // find one category by its `id` value
+  // find one weapon by its `id` value
   // be sure to include its associated Products
 
   try {
-    const schmoke = await Category.findByPk(req.params.id,{
-      include: [{ model: Product }],
+    const schmoke = await Weapon.findByPk(req.params.id,{
 
     });
     res.status(200).json(schmoke);
@@ -32,10 +31,10 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  // create a new category
+  // create a new weapon
   try {
-    const locationData = await Category.create({
-      category_name: req.body.category_name,
+    const locationData = await Weapon.create({
+      weapon_name: req.body.weapon_name,
     });
     res.status(200).json(locationData);
   } catch (err) {
@@ -44,16 +43,16 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // update a category by its `id` value
+  // update a weapon by its `id` value
   
-    Category.update(
-      {category_name: req.body.category_name},
+    Weapon.update(
+      {weapon_name: req.body.weapon_name},
       {where: {id: req.params.id} }
     )
     .then(lump => {
       if(!lump)
       {
-        res.status(404).json({message: 'There is no category found at this id'});
+        res.status(404).json({message: 'There is no weapon found at this id'});
         return;
       }
       res.json("Updated");
@@ -67,15 +66,15 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-  // delete a category by its `id` value
+  // delete a weapon by its `id` value
 
-  Category.destroy(
+  Weapon.destroy(
     {where: {id: req.params.id} }
   )
   .then(lump => {
     if(!lump)
     {
-      res.status(404).json({message: 'There is no category found at this id'});
+      res.status(404).json({message: 'There is no weapon found at this id'});
       return;
     }
     res.json("Obliterated");

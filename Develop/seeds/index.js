@@ -1,14 +1,15 @@
-const seedCategories = require('./category-seeds');
-
+const seedWeapons = require('./weapon-seeds');
+const seedClasses = require('./class-seeds');
 
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
-  await seedCategories();
-  console.log('\n----- CATEGORIES SEEDED -----\n');
-
+  await seedWeapons();
+  console.log('\n-----WEAPONS SEEDED -----\n');
+  await seedClasses();
+  console.log('\n-----Classes SEEDED -----\n');
   process.exit(0);
 };
 
