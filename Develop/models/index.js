@@ -10,7 +10,7 @@ Weapon.hasMany(Class, {
 });
 
 // Class belongsTo Weapon
-Product.belongsTo(Weapon, { foreignKey: 'weapon_id',});
+Class.belongsTo(Weapon, { foreignKey: 'weapon_id',});
 
 
 module.exports = {

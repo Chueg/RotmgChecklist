@@ -2,67 +2,67 @@ const { Class } = require('../models');
 
 const ClassData = [
   {
-    Class_name: 'Paladin',
+    class_name: 'Paladin',
     weapon_id: 1,
   },
   {
-    Class_name: 'Knight',
+    class_name: 'Knight',
     weapon_id: 1,
   },
   {
-    Class_name: 'Warrior',
+    class_name: 'Warrior',
     weapon_id: 1,
   },
   {
-    Class_name: 'Samurai',
+    class_name: 'Samurai',
     weapon_id: 2,
   },
   {
-    Class_name: 'Kensei',
+    class_name: 'Kensei',
     weapon_id: 2,
   },
   {
-    Class_name: 'Ninja',
+    class_name: 'Ninja',
     weapon_id: 2,
   },
   {
-    Class_name: 'Rogue',
+    class_name: 'Rogue',
     weapon_id: 3,
   },
   {
-    Class_name: 'Assassin',
+    class_name: 'Assassin',
     weapon_id: 3,
   },
   {
-    Class_name: 'Archer',
+    class_name: 'Archer',
     weapon_id: 4,
   },
   {
-    Class_name: 'Huntress',
+    class_name: 'Huntress',
     weapon_id: 4,
   },
   {
-    Class_name: 'Bard',
+    class_name: 'Bard',
     weapon_id: 4,
   },
   {
-    Class_name: 'Wizard',
+    class_name: 'Wizard',
     weapon_id: 5,
   },
   {
-    Class_name: 'Mystic',
+    class_name: 'Mystic',
     weapon_id: 5,
   },
   {
-    Class_name: 'Priest',
+    class_name: 'Priest',
     weapon_id: 6,
   },
   {
-    Class_name: 'Sorcerer',
+    class_name: 'Sorcerer',
     weapon_id: 6,
   },
   {
-    Class_name: 'Summoner',
+    class_name: 'Summoner',
     weapon_id: 6,
   },
 ];

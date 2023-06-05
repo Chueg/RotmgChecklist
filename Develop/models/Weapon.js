@@ -12,9 +12,10 @@ Weapon.init(
       primaryKey: true,
       autoIncrement: true,
   },
-  weapon_name: {
+  Weapon_name: {
     type: DataTypes.STRING,
     allowNull: false,
+    default: 'minge',
 }
   },
   {

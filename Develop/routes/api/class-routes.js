@@ -1,14 +1,14 @@
 const router = require('express').Router();
-const { Weapon } = require('../../models');
+const { Class } = require('../../models');
 
-// The `/api/categories` endpoint
+// The `/api/classes` endpoint
 
 router.get('/', async (req, res) => {
-  // find all categories
-  // be sure to include its associated Products
+  // find all classes
+  // be sure to include its associated Armor
 
   try {
-    const schmoke = await Weapon.findAll({
+    const schmoke = await Class.findAll({
     });
     res.status(200).json(schmoke);
   } catch (err) {
@@ -17,11 +17,11 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-  // find one weapon by its `id` value
-  // be sure to include its associated Products
+  // find one class by its `id` value
+  // be sure to include its associated Armor
 
   try {
-    const schmoke = await Weapon.findByPk(req.params.id,{
+    const schmoke = await Class.findByPk(req.params.id,{
 
     });
     res.status(200).json(schmoke);
@@ -31,10 +31,10 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  // create a new weapon
+  // create a new class
   try {
-    const locationData = await Weapon.create({
-      weapon_name: req.body.weapon_name,
+    const locationData = await Class.create({
+      class_name: req.body.class_name,
     });
     res.status(200).json(locationData);
   } catch (err) {
@@ -43,16 +43,16 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // update a weapon by its `id` value
+  // update a class by its `id` value
   
-    Weapon.update(
-      {weapon_name: req.body.weapon_name},
+    Class.update(
+      {class_name: req.body.class_name},
       {where: {id: req.params.id} }
     )
     .then(lump => {
       if(!lump)
       {
-        res.status(404).json({message: 'There is no weapon found at this id'});
+        res.status(404).json({message: 'There is no class found at this id'});
         return;
       }
       res.json("Updated");
