@@ -23,7 +23,15 @@ Class.init(
           model: 'weapon',
           key: 'id'
       },
+      },
+      armor_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'armor',
+          key: 'id'
+      },
       }
+      
     
   },
   {

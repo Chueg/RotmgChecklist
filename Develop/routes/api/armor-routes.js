@@ -1,15 +1,14 @@
 const router = require('express').Router();
-const { Class , Armor } = require('../../models');
+const { Armor } = require('../../models');
 
-// The `/api/classes` endpoint
+// The `/api/armores` endpoint
 
 router.get('/', async (req, res) => {
-  // find all classes
+  // find all armores
   // be sure to include its associated Armor
 
   try {
-    const schmoke = await Class.findAll({
-        include: [{ model: Armor }]
+    const schmoke = await Armor.findAll({
     });
     res.status(200).json(schmoke);
   } catch (err) {
@@ -18,12 +17,11 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
-  // find one class by its `id` value
+  // find one armor by its `id` value
   // be sure to include its associated Armor
 
   try {
-    const schmoke = await Class.findByPk(req.params.id,{
-        include: [{ model: Armor }]
+    const schmoke = await Armor.findByPk(req.params.id,{
 
     });
     res.status(200).json(schmoke);
@@ -33,10 +31,10 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  // create a new class
+  // create a new armor
   try {
-    const locationData = await Class.create({
-      class_name: req.body.class_name,
+    const locationData = await Armor.create({
+      armor_name: req.body.armor_name,
     });
     res.status(200).json(locationData);
   } catch (err) {
@@ -45,16 +43,16 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  // update a class by its `id` value
+  // update a armor by its `id` value
   
-    Class.update(
-      {class_name: req.body.class_name},
+    Armor.update(
+      {armor_name: req.body.armor_name},
       {where: {id: req.params.id} }
     )
     .then(lump => {
       if(!lump)
       {
-        res.status(404).json({message: 'There is no class found at this id'});
+        res.status(404).json({message: 'There is no armor found at this id'});
         return;
       }
       res.json("Updated");
