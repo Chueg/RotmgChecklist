@@ -2,22 +2,28 @@ const { Weapon } = require('../models');
 
 const WeaponData = [
   {
-    Weapon_name: 'Sword',
+    weapon_name: 'Big Slingus',
+    weapon_type: 'Sword',
   },
   {
-    Weapon_name: 'Katana',
+    weapon_name: 'Slice',
+    weapon_type: 'Katana',
   },
   {
-    Weapon_name: 'Dagger',
+    weapon_name: 'Gringo',
+    weapon_type: 'Dagger',
   },
   {
-    Weapon_name: 'Bow',
+    weapon_name: 'Slime Moment',
+    weapon_type: 'Bow',
   },
   {
-    Weapon_name: 'Staff',
+    weapon_name: 'Long One',
+    weapon_type: 'Staff',
   },
   {
-    Weapon_name: 'Wand',
+    weapon_name: 'Swongus',
+    weapon_type: 'Wand',
   },
 ];
 

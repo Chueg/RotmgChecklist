@@ -3,6 +3,7 @@
 const Weapon = require('./Weapon');
 const Class = require('./Class');
 const Armor = require('./Armor');
+const Ability = require('./Ability');
 
 
 // Categories have many Classes
@@ -22,10 +23,18 @@ Armor.hasMany(Class, {
 // AZrmor belongsTo Class
 Class.belongsTo(Armor, { foreignKey: 'armor_id',});
 
+Class.hasMany(Ability, {
+  foreignKey: 'class_id'
+});
+
+// AZrmor belongsTo Class
+Ability.belongsTo(Class, { foreignKey: 'class_id',});
+
 
 module.exports = {
   Weapon,
   Class,
-  Armor
+  Armor,
+  Ability
 
 };

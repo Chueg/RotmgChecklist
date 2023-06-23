@@ -30,7 +30,12 @@ Class.init(
           model: 'armor',
           key: 'id'
       },
-      }
+      },
+
+      ability_type: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        },
       
     
   },

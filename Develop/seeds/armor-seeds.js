@@ -2,13 +2,16 @@ const { Armor } = require('../models');
 
 const ArmorData = [
     {
-        armor_type: 'Heavy',
+        armor_name: '10 Chainmail',
+        armor_type: 'H',
       },
       {
-        armor_type: 'Light'
+        armor_name: 'Basilisk Armor',
+        armor_type: 'L'
       },
       {
-        armor_type: 'Robe'
+        armor_name: 'Blue Dragon Robe',
+        armor_type: 'R'
       }
 ];
 

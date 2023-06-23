@@ -12,7 +12,12 @@ Weapon.init(
       primaryKey: true,
       autoIncrement: true,
   },
-  Weapon_name: {
+  weapon_type: {
+    type: DataTypes.CHAR,
+    allowNull: false,
+    default: 'm',
+},
+  weapon_name: {
     type: DataTypes.STRING,
     allowNull: false,
     default: 'minge',
