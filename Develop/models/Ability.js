@@ -23,7 +23,11 @@ Ability.init(
       key: 'id'
   },
   },
-
+  
+    location: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 
     
   },

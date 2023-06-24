@@ -17,20 +17,16 @@ Class.init(
     allowNull: false,
     },
 
-    weapon_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'weapon',
-          key: 'id'
+
+    weapon_type: {
+      type: DataTypes.STRING,
+      allowNull: false,
       },
-      },
-      armor_id: {
-        type: DataTypes.INTEGER,
-        references: {
-          model: 'armor',
-          key: 'id'
-      },
-      },
+
+      armor_type: {
+        type: DataTypes.CHAR,
+        allowNull: false,
+        },
 
       ability_type: {
         type: DataTypes.STRING,

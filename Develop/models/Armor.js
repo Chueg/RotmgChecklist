@@ -19,7 +19,11 @@ Armor.init(
     armor_type: {
       type: DataTypes.CHAR,
       allowNull: false,
-    }
+    },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
 
     
   },

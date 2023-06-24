@@ -21,7 +21,11 @@ Weapon.init(
     type: DataTypes.STRING,
     allowNull: false,
     default: 'minge',
-}
+},
+location: {
+  type: DataTypes.STRING,
+  allowNull: false,
+},
   },
   {
     sequelize,

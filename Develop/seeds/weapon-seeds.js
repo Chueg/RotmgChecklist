@@ -2,28 +2,35 @@ const { Weapon } = require('../models');
 
 const WeaponData = [
   {
-    weapon_name: 'Big Slingus',
+    weapon_name: 'Demon Blade',
     weapon_type: 'Sword',
+    location:'abyss'
   },
   {
-    weapon_name: 'Slice',
+    weapon_name: 'Celestial Blade',
     weapon_type: 'Katana',
+    location:'lod feargus'
+
   },
   {
-    weapon_name: 'Gringo',
+    weapon_name: 'Etherite Dagger',
     weapon_type: 'Dagger',
+    location: 'Haunted Cemetary'
   },
   {
-    weapon_name: 'Slime Moment',
+    weapon_name: 'Doom Bow',
     weapon_type: 'Bow',
+    location: 'Undead Lair'
   },
   {
-    weapon_name: 'Long One',
+    weapon_name: 'Staff of Prejudice',
     weapon_type: 'Staff',
+    location: 'Sprite World'
   },
   {
-    weapon_name: 'Swongus',
+    weapon_name: 'Crystal Wand',
     weapon_type: 'Wand',
+    location: 'Crystal'
   },
 ];
 
