@@ -1,15 +1,30 @@
 const { Weapon } = require('../models');
 
 const WeaponData = [
+
+//SWORD//
+
   {
     weapon_name: 'Demon Blade',
     weapon_type: 'Sword',
     location:'abyss'
   },
+  
+  {
+    weapon_name: 'Pixie Enchanted Sword',
+    weapon_type: 'Sword',
+    location:6
+  },
+
+  {
+    weapon_name: 'Arcane Rapier',
+    weapon_type: 'Sword',
+    location:7
+  },
 
 
 
-
+//KATANA//
 
 
 
@@ -22,7 +37,7 @@ const WeaponData = [
 
 
 
-
+//DAGGER//
 
 
 
@@ -34,12 +49,12 @@ const WeaponData = [
   {
     weapon_name: 'Poison Fang Dagger',
     weapon_type: 'Dagger',
-    location: 'Spider Den'
+    location: 3
   },
 
 
 
-
+//BOW//
 
 
   {
@@ -50,12 +65,18 @@ const WeaponData = [
   {
     weapon_name: 'Bramble Bow',
     weapon_type: 'Bow',
-    location: 'Forest Maze'
+    location: 2
+  },
+  {
+    weapon_name: 'Resplendent Bow',
+    weapon_type: 'Bow',
+    location: 7
   },
 
 
 
 
+//STAFFS//
 
 
   {
@@ -66,18 +87,22 @@ const WeaponData = [
   {
     weapon_name: 'Staff of the Crystal Serpent',
     weapon_type: 'Staff',
-    location: 'Forbidden Jungle'
+    location: 4
   },
-
-
-
-
-
   {
-    weapon_name: 'Crystal Wand',
-    weapon_type: 'Wand',
-    location: 'Crystal'
+    weapon_name: 'Spirit Staff',
+    weapon_type: 'Staff',
+    location: 8
   },
+
+//WANDS//
+
+
+  // {
+  //   weapon_name: 'Crystal Wand',
+  //   weapon_type: 'Wand',
+  //   location: 'Crystal'
+  // },
 ];
 
 const seedWeapons = () => Weapon.bulkCreate(WeaponData);

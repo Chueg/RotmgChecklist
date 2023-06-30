@@ -5,9 +5,14 @@ const AbilityData = [
   //Paladin 1
 
     {
-        ability_name: 'Seal of Blasphemous Prayer',
+        ability_name: 'Seal of the Enchanted Forest',
         class_id:1,
-        location:'Pentaract'
+        location:6
+      },
+      {
+        ability_name: 'Sandstone Seal',
+        class_id:1,
+        location:7
       },
 
   //Knight 2
@@ -18,12 +23,17 @@ const AbilityData = [
     class_id:2,
     location:'Snake Pit'
   },
+  {
+    ability_name: 'Shield of Flowing Clarity',
+    class_id:2,
+    location:8
+  },
 
   //Warrior 3
     {
-        ability_name: 'Helm of the Juggernaut',
+        ability_name: 'Amber Crusted Helmet',
         class_id:3,
-        location:'Sphinx, Hermit'
+        location:7
       },
 
   //Samurai 4
@@ -34,7 +44,7 @@ const AbilityData = [
       {
         ability_name: 'Spider Shuriken',
         class_id:6,
-        location:'Spider Den'
+        location:3
       },
 
   //Rogue 7
@@ -48,10 +58,23 @@ const AbilityData = [
       {
         ability_name: 'Cocoon Quiver',
         class_id:10,
-        location:'Forest Maze'
+        location:2
+      },
+            {
+        ability_name: 'Embellished Quiver',
+        class_id:10,
+        location:7
       },
 
+
   //Huntress 11
+
+  {
+    ability_name: 'Lifebringing Lotus',
+    class_id:10,
+    location:8
+  },
+
 
   //Bard 12
 
@@ -70,7 +93,12 @@ const AbilityData = [
   {
     ability_name: 'Orb of Sweet Demise',
     class_id:15,
-    location:'The Hive'
+    location:5
+  },
+  {
+    ability_name: 'Enchantment Orb',
+    class_id:15,
+    location:8
   },
 
   //Priest 16
@@ -80,7 +108,7 @@ const AbilityData = [
   {
     ability_name: 'Honey Scepter',
     class_id:17,
-    location:'The Hive'
+    location:5
   },
  
   //Summoner 18

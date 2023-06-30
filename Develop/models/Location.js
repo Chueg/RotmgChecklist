@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Armor extends Model {}
+class Location extends Model {}
 
-Armor.init(
+Location.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,31 +12,19 @@ Armor.init(
       primaryKey: true,
       autoIncrement: true,
   },
-    armor_name: {
+  LC: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
-    armor_type: {
-      type: DataTypes.CHAR,
-      allowNull: false,
-    },
-    location_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'location',
-        key: 'id'
-    },
-    },
-
-    
+    default: 'minge',
+}
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'armor',
+    modelName: 'location',
   }
 );
 
-module.exports = Armor;
+module.exports = Location;

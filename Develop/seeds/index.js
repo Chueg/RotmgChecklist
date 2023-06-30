@@ -4,13 +4,22 @@ const seedArmors = require('./armor-seeds');
 const seedAbilities = require('./ability-seeds');
 const seedRings = require('./ring-seeds');
 
+const seedLocations = require('./location-seeds');
+
+
 const sequelize = require('../config/connection');
 
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
+  await seedLocations();
+
+  
+  console.log('\n-----Weapons SEEDED -----\n');
   console.log('\n----- DATABASE SYNCED -----\n');
   await seedWeapons();
+
+  
   console.log('\n-----Weapons SEEDED -----\n');
   await seedArmors();
 
