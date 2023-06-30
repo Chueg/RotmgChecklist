@@ -4,6 +4,7 @@ const Weapon = require('./Weapon');
 const Class = require('./Class');
 const Armor = require('./Armor');
 const Ability = require('./Ability');
+const Ring = require('./Ring');
 
 
 Class.hasMany(Ability, {
@@ -18,6 +19,7 @@ module.exports = {
   Weapon,
   Class,
   Armor,
-  Ability
+  Ability,
+  Ring
 
 };

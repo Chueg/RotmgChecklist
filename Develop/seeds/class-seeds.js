@@ -50,6 +50,12 @@ const ClassData = [
     ability_type: 'Poison'
   },
   {
+    class_name: 'Trickster',
+    weapon_type: 'Dagger',
+    armor_type: 'L',
+    ability_type: 'Prism'
+  },
+  {
     class_name: 'Archer',
     weapon_type: 'Bow',
     armor_type: 'L',
@@ -72,6 +78,12 @@ const ClassData = [
     weapon_type: 'Staff',
     armor_type: 'R',
     ability_type: 'Spell'
+  },
+  {
+    class_name: 'Necromancer',
+    weapon_type: 'Staff',
+    armor_type: 'R',
+    ability_type: 'Skull'
   },
   {
     class_name: 'Mystic',
