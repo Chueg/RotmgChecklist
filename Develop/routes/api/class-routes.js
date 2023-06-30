@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Class , Armor } = require('../../models');
+const { Class , Armor, Weapon, Ability } = require('../../models');
 
 // The `/api/classes` endpoint
 
@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
 
   try {
     const schmoke = await Class.findAll({
-        include: [{ model: Armor }]
     });
     res.status(200).json(schmoke);
   } catch (err) {
@@ -23,26 +22,61 @@ router.get('/:id', async (req, res) => {
 
   try {
     const schmoke = await Class.findByPk(req.params.id,{
-        include: [{ model: Armor }]
 
     });
+    const bonkers = await Weapon.findAll({ where : { weapon_type: schmoke.weapon_type}});
+    const conkers = await Ability.findAll({ where : { class_id: schmoke.id}});
     res.status(200).json(schmoke);
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.post('/', async (req, res) => {
-  // create a new class
+router.get('/:id/Weapon', async (req, res) => {
+  // find one class by its `id` value
+  // be sure to include its associated Armor
+
   try {
-    const locationData = await Class.create({
-      class_name: req.body.class_name,
+    const schmoke = await Class.findByPk(req.params.id,{
+
     });
-    res.status(200).json(locationData);
+    const bonkers = await Weapon.findAll({ where : { weapon_type: schmoke.weapon_type}});
+    res.status(200).json(bonkers);
   } catch (err) {
-    res.status(400).json(err);
+    res.status(500).json(err);
   }
 });
+
+router.get('/:id/Ability', async (req, res) => {
+  // find one class by its `id` value
+  // be sure to include its associated Armor
+
+  try {
+    const schmoke = await Class.findByPk(req.params.id,{
+
+    });
+    const bonkers = await Ability.findAll({ where : { class_id: schmoke.id}});
+    res.status(200).json(bonkers);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/:id/Armor', async (req, res) => {
+  // find one class by its `id` value
+  // be sure to include its associated Armor
+
+  try {
+    const schmoke = await Class.findByPk(req.params.id,{
+
+    });
+    const bonkers = await Armor.findAll({ where : { armor_type: schmoke.armor_type}});
+    res.status(200).json(bonkers);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 router.put('/:id', async (req, res) => {
   // update a class by its `id` value
