@@ -28,7 +28,6 @@ const LocationData = [
     {
         LC:'Snake Pit'
     },
-    //Sprite World 10
     {
         LC:'Sprite World'
     },
@@ -40,7 +39,23 @@ const LocationData = [
     },
     {
         LC:'Manor of the Immortals'
-    }
+    },
+    {
+        LC:"Puppet Master's Theatre"
+    },
+    {
+        LC:"Toxic Sewers"
+    },
+    //Cursed Library 16
+    {
+        LC:"Cursed Library"
+    },
+    {
+        LC:"Mad Lab"
+    },
+    {
+        LC:"Abyss of Demons"
+    },
     
     
       

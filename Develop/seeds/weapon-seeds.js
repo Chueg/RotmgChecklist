@@ -7,7 +7,7 @@ const WeaponData = [
   {
     weapon_name: 'Demon Blade',
     weapon_type: 'Sword',
-    location:'abyss'
+    location:18
   },
   
   {
@@ -28,12 +28,18 @@ const WeaponData = [
 
 
 
-  {
-    weapon_name: 'Celestial Blade',
-    weapon_type: 'Katana',
-    location:'lod feargus'
+  // {
+  //   weapon_name: 'Celestial Blade',
+  //   weapon_type: 'Katana',
+  //   location:'lod feargus'
+  // },
 
+  {
+    weapon_name: 'Void Blade',
+    weapon_type: 'Katana',
+    location:15
   },
+
 
 
 
@@ -61,6 +67,16 @@ const WeaponData = [
     weapon_type: 'Dagger',
     location: 13
   },
+  {
+    weapon_name: 'Toxin Tooth',
+    weapon_type: 'Dagger',
+    location: 15
+  },
+  {
+    weapon_name: 'Corruption Cutter(Troom)',
+    weapon_type: 'Dagger',
+    location: 16
+  },
 
 
 
@@ -81,6 +97,11 @@ const WeaponData = [
     weapon_name: 'Resplendent Bow',
     weapon_type: 'Bow',
     location: 7
+  },
+  {
+    weapon_name: 'Deathless Crossbow(Troom)',
+    weapon_type: 'Bow',
+    location: 16
   },
 
 
@@ -128,6 +149,11 @@ const WeaponData = [
     weapon_name: "St Abraham's Wand",
     weapon_type: 'Wand',
     location: 13
+  },
+  {
+    weapon_name: "Conducting Wand",
+    weapon_type: 'Wand',
+    location: 17
   },
 
 

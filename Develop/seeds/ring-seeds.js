@@ -58,6 +58,26 @@ const RingData = [
         ring_name: "Ring of Divine Faith",
         location:13
       },
+      {
+        ring_name: "Performer's hat",
+        location:14
+      },
+      {
+        ring_name: "Experimental Ring",
+        location:17
+      },
+      {
+        ring_name: "Horrific Claws(Purple Guy)",
+        location:17
+      },
+      {
+        ring_name: "C.O.N.T.R.O.L.L.E.R.",
+        location:17
+      },
+      {
+        ring_name: "Firelight Necklace",
+        location:18
+      },
       
 ];
 

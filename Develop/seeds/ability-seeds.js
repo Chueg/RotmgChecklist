@@ -14,6 +14,11 @@ const AbilityData = [
         class_id:1,
         location:7
       },
+      {
+        ability_name: "Scholar's Seal",
+        class_id:1,
+        location:16
+      },
 
   //Knight 2
 
@@ -40,7 +45,19 @@ const AbilityData = [
 
   //Samurai 4
 
+  {
+    ability_name: "Ronin's Wakizashi",
+    class_id:4,
+    location:16
+  },
+
   //Kensei 5
+
+  {
+    ability_name: "Volcanic Sheath",
+    class_id:5,
+    location:18
+  },
 
   //Ninja 6
 
@@ -66,9 +83,28 @@ const AbilityData = [
   
 
   //Assassin 8
+    
+  {
+    ability_name: 'Murky Toxin',
+    class_id:8,
+    location:15
+  },
+  {
+    ability_name: 'Virulent Venom',
+    class_id:8,
+    location:15
+  },
+
+
 
   //Trickster 9
-  
+    
+  {
+    ability_name: 'Prism of Dancing Swords',
+    class_id:9,
+    location:14
+  },
+
   //Archer 10
   
       {
@@ -124,6 +160,11 @@ const AbilityData = [
     class_id:15,
     location:8
   },
+  {
+    ability_name: 'Scorchium Stone',
+    class_id:15,
+    location:18
+  },
 
   //Priest 16
 
@@ -133,12 +174,28 @@ const AbilityData = [
       location:13
     },
 
+    {
+      ability_name: 'Necronomicon',
+      class_id:16,
+      location:16
+    },
+
   //Sorcerer 17
 
   {
     ability_name: 'Honey Scepter',
     class_id:17,
     location:5
+  },
+  {
+    ability_name: 'Scepter of Fulmination',
+    class_id:17,
+    location:17
+  },
+  {
+    ability_name: 'Grotesque Scepter',
+    class_id:17,
+    location:17
   },
  
   //Summoner 18

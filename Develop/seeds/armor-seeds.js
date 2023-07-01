@@ -46,6 +46,16 @@ const ArmorData = [
       armor_type: 'L',
       location:13
     },
+    {
+      armor_name: 'Harlequin Armor',
+      armor_type: 'L',
+      location:14
+    },
+    {
+      armor_name: "Wraith's Brigandine",
+      armor_type: 'L',
+      location:16
+    },
 
       // {
       //   armor_name: 'Leaf Dragon Hide Armor',
@@ -79,6 +89,26 @@ const ArmorData = [
         armor_name: 'Chausible of Holy Light',
         armor_type: 'R',
         location:13
+      },
+      {
+        armor_name: "Magician's robe",
+        armor_type: 'R',
+        location:14
+      },
+      {
+        armor_name: "Robe of the Mad Scientist",
+        armor_type: 'R',
+        location:17
+      },
+      {
+        armor_name: "Rocky Robe",
+        armor_type: 'R',
+        location:18
+      },
+      {
+        armor_name: "Molten Mantle(Troom)",
+        armor_type: 'R',
+        location:18
       },
 ];
 
