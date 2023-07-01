@@ -24,6 +24,29 @@ const ArmorData = [
 
 
     //Light
+
+    {
+      armor_name: 'Snakeskin Armor',
+      armor_type: 'L',
+      location:9
+    },
+    
+    {
+      armor_name: 'Acidic Armor ',
+      armor_type: 'L',
+      location:9
+    },
+    {
+      armor_name: 'Ornate Armor ',
+      armor_type: 'L',
+      location:11
+    },
+    {
+      armor_name: 'Hallowed Hide(Armor guy)',
+      armor_type: 'L',
+      location:13
+    },
+
       // {
       //   armor_name: 'Leaf Dragon Hide Armor',
       //   armor_type: 'L',
@@ -46,7 +69,17 @@ const ArmorData = [
         armor_name: 'Woodland Robe',
         armor_type: 'R',
         location:8
-      }
+      },
+      {
+        armor_name: 'Toga Picta',
+        armor_type: 'R',
+        location:12
+      },
+      {
+        armor_name: 'Chausible of Holy Light',
+        armor_type: 'R',
+        location:13
+      },
 ];
 
 const seedArmors = () => Armor.bulkCreate(ArmorData);

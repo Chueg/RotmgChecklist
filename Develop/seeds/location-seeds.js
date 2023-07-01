@@ -25,6 +25,22 @@ const LocationData = [
     {
         LC:'Magic Woods'
     },
+    {
+        LC:'Snake Pit'
+    },
+    //Sprite World 10
+    {
+        LC:'Sprite World'
+    },
+    {
+        LC:'Cave of a Thousand Treasures'
+    },
+    {
+        LC:'Undead Lair'
+    },
+    {
+        LC:'Manor of the Immortals'
+    }
     
     
       

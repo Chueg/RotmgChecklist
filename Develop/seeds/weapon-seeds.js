@@ -51,6 +51,16 @@ const WeaponData = [
     weapon_type: 'Dagger',
     location: 3
   },
+  {
+    weapon_name: 'Bone Dagger',
+    weapon_type: 'Dagger',
+    location: 13
+  },
+  {
+    weapon_name: 'Soulcursed Scythe(Troom)',
+    weapon_type: 'Dagger',
+    location: 13
+  },
 
 
 
@@ -60,7 +70,7 @@ const WeaponData = [
   {
     weapon_name: 'Doom Bow',
     weapon_type: 'Bow',
-    location: 'Undead Lair'
+    location: 12
   },
   {
     weapon_name: 'Bramble Bow',
@@ -79,11 +89,7 @@ const WeaponData = [
 //STAFFS//
 
 
-  {
-    weapon_name: 'Staff of Prejudice',
-    weapon_type: 'Staff',
-    location: 'Sprite World'
-  },
+
   {
     weapon_name: 'Staff of the Crystal Serpent',
     weapon_type: 'Staff',
@@ -94,15 +100,42 @@ const WeaponData = [
     weapon_type: 'Staff',
     location: 8
   },
+  {
+    weapon_name: 'Staff of Prejudice',
+    weapon_type: 'Staff',
+    location: 10
+  },
+  {
+    weapon_name: 'Edictum Praetoris',
+    weapon_type: 'Staff',
+    location: 12
+  },
 
 //WANDS//
 
+  {
+    weapon_name: 'Wand of the Bulwark',
+    weapon_type: 'Wand',
+    location: 9
+  },
 
-  // {
-  //   weapon_name: 'Crystal Wand',
-  //   weapon_type: 'Wand',
-  //   location: 'Crystal'
-  // },
+  {
+    weapon_name: 'Sprite Wand',
+    weapon_type: 'Wand',
+    location: 10
+  },
+  {
+    weapon_name: "St Abraham's Wand",
+    weapon_type: 'Wand',
+    location: 13
+  },
+
+
+
+
+
+
+
 ];
 
 const seedWeapons = () => Weapon.bulkCreate(WeaponData);

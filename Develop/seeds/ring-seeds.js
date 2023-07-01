@@ -38,6 +38,26 @@ const RingData = [
         ring_name: "Fairy Ring",
         location:8
       },
+      {
+        ring_name: "Snake Eye Ring",
+        location:9
+      },
+      {
+        ring_name: "Pernicious Peridot(TRoom)",
+        location:9
+      },
+      {
+        ring_name: "Cuband",
+        location:10
+      },
+      {
+        ring_name: "Ruthvan's Rosary(Doggy)",
+        location:13
+      },
+      {
+        ring_name: "Ring of Divine Faith",
+        location:13
+      },
       
 ];
 
